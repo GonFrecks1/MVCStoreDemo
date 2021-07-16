@@ -76,8 +76,8 @@ C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\bin\System.Web.Web
 C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\bin\Newtonsoft.Json.xml
 C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\bin\Antlr3.Runtime.pdb
 C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\obj\Debug\WebAppECartDemo.csprojAssemblyReference.cache
 C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\obj\Debug\WebAppECartDemo.csproj.CoreCompileInputs.cache
 C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\obj\Debug\WebAppECartDemo.csproj.CopyComplete
 C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\obj\Debug\WebAppECartDemo.dll
 C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\obj\Debug\WebAppECartDemo.pdb
+C:\Users\Man\source\repos\MVC\WebAppECartDemo\WebAppECartDemo\obj\Debug\WebAppECartDemo.csprojAssemblyReference.cache

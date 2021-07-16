@@ -11,16 +11,16 @@ namespace WebAppECartDemo.Controllers
 {
     public class ItemController : Controller
     {
-        private ECartDBEntities eCartDBEntities;
+        private ECartDBEntities objCartDBEntities;
         public ItemController()
         {
-            eCartDBEntities = new ECartDBEntities();
+            objCartDBEntities = new ECartDBEntities();
         }
         // GET: Item
         public ActionResult Index()
         {
             ItemViewModel itemViewModel = new ItemViewModel();
-            itemViewModel.CategorySelectListItems = (from m in eCartDBEntities.Categories
+            itemViewModel.CategorySelectListItems = (from m in objCartDBEntities.Categories
                                                      select new SelectListItem()
                                                      {
                                                          Text = m.CategoryName,
@@ -46,8 +46,8 @@ namespace WebAppECartDemo.Controllers
             items.ItemName = itemViewModel.ItemName;
             items.ItemPrice = itemViewModel.ItemPrice;
 
-            eCartDBEntities.Items.Add(items);
-            eCartDBEntities.SaveChanges();
+            objCartDBEntities.Items.Add(items);
+            objCartDBEntities.SaveChanges();
 
             return Json(new { Success = true, Message = "Items is added Successfully."}, JsonRequestBehavior.AllowGet);
         }
