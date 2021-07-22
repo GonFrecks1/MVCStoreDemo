@@ -27,5 +27,7 @@ namespace WebAppECartDemo.Models
     
         public virtual DbSet<Categories> Categories { get; set; }
         public virtual DbSet<Items> Items { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }

@@ -12,14 +12,10 @@ namespace WebAppECartDemo.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Items
+    public partial class Order
     {
-        public System.Guid ItemId { get; set; }
-        public int CategoryId { get; set; }
-        public string ItemCode { get; set; }
-        public string ItemName { get; set; }
-        public string Description { get; set; }
-        public string ImagePath { get; set; }
-        public Nullable<decimal> ItemPrice { get; set; }
+        public int OrderId { get; set; }
+        public System.DateTime OrderDate { get; set; }
+        public string OrderNumber { get; set; }
     }
 }

@@ -3,7 +3,32 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Product List</h2>
+<script>
+    function AddToCart(item) {
+        var itemId = $(item).attr("itemid");
+        var formData = new FormData();
+        formData.append("itemId", itemId);
+
+         $.ajax({
+                async: true,
+                dataType: 'JSON',
+                type: 'POST',
+                contentType: false,
+                processData: false,
+                url: '/Shopping/Index',
+                data: formData,
+                success: function (data) {
+                    if (data.Success) {
+                        $('#cartItem').text('Cart(' + data.Counter  + ')');
+                    }
+                },
+                error: function () {
+                    alert('There is some problem!');
+                }
+            });
+    }
+</script>
+
 
 <div class="container">
     <div class="row">
@@ -25,7 +50,7 @@
                       <b>$@item.ItemPrice</b>
                 </div>
                 <div class="col-md-4" style="text-align:right; margin-bottom: 10px; border-top: 2px solid maroon; padding: 2px;">
-                    <input type="button" value="Add to Cart" class="btn btn-primary" itemid="@item.ItemId" id="btnAddToCart" onclick="AddToCart();">
+                    <input type="button" value="Add to Cart" class="btn btn-primary" itemid="@item.ItemId" id="btnAddToCart" onclick="AddToCart(this);">
                 </div>
             </div>
 
